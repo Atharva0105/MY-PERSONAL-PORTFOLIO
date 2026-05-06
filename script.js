@@ -53,3 +53,19 @@ sections.forEach(section => {
     section.classList.add("hidden");
     observer.observe(section);
 });
+/* FADE-IN ANIMATION */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
